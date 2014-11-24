@@ -29,7 +29,6 @@ class CrazyFormSubmitter():
         return full_url
 
     def __fill_form(self, url, form, text_input_value):
-        print url
         for _input in form.inputs:
             if isinstance(_input, InputElement) and _input.type.lower() == "text":
                 _input.value = text_input_value
